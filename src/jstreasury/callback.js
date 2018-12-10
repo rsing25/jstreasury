@@ -1,10 +1,8 @@
 "use strict"
-
 const posts = [
     {title:'post one', body:'This is post one'},
     {title:'post two', body:'This is post two'}
 ];
-
 function getPosts() {
     setTimeout( () => {
         let output ='';
@@ -15,8 +13,6 @@ function getPosts() {
         console.log(output);
     },1000)
 }
-
-
 const createPost = (post,callback)=> {
     setTimeout( ()=> {
         posts.push(post);
