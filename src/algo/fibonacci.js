@@ -6,14 +6,31 @@ but will dramatically decrease the time complexity to 2N which will resolve to l
 */
 
 
-var fibonacci = function(num, memo) {
-    memo = memo || {};
-  
-    if (memo[num]) return memo[num];
-    if (num <= 1) return 1;
-  
-    return memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo);
+  var fib = function(n) {
+    let arr = [0, 1];
+
+    for (let i = 2; i < n + 1; i++) {
+      arr.push(arr[i - 1] + arr[i -2]);
+
+    }
+  return arr;
   }
 
-  console.log(fibonacci(5));
-  
+  console.log(fib(10));
+
+  var fibonacci = function(n, memo) {
+    memo = memo || {};
+
+    if (n < 2){
+      return n
+    }
+    return fibonacci(n - 1, memo) + fibonacci (n - 2, memo)
+  }
+
+  console.log(fibonacci(10));
+  /*
+
+  [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ]
+  55
+
+  */

@@ -25,6 +25,8 @@ Array.prototype.removeDupplicate = function() {
 }
 console.log(names.removeDupplicate());
 
+let arr = [1, 2, 3, 3, 3, 4, 5];
+
 Array.prototype.removeDups = function() {
     var that = this;
     let uniqueObj = {};
@@ -38,6 +40,8 @@ Array.prototype.removeDups = function() {
     console.log("Object.values(uniqueObj) --" + Object.values(uniqueObj));
     console.log("Object.keys(uniqueObj) --" + Object.keys(uniqueObj));
     
-    return Object.keys(uniqueObj);
+    //return Object.keys(uniqueObj); //[ '1', '2', '3', '4', '5' ]
+    return Object.values(uniqueObj); //[ 1, 2, 3, 4, 5 ]
+
 }
-console.log(names.removeDups());
+console.log(arr.removeDups());

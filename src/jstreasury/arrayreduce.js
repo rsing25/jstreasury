@@ -11,10 +11,11 @@ var orders = [
     {amout: 100}
 ];
 
-var totalAMout = orders.reduce( function(sum,order) {
+var totalAmount = orders.reduce( function(sum,order) {
         console.log("hello",sum,order);
         return sum+order.amout;
 }, 0);
+console.log(totalAmount);
 
 
 /*
@@ -22,4 +23,16 @@ m-c02xd0uxjgh7:js rsing25$ node reduce.js
 hello 0 { amout: 250 }
 hello 250 { amout: 400 }
 hello 650 { amout: 100 }
+750
 */
+
+Array.prototype.reduceNew = function (defalutVal) {
+
+        let sum = defalutVal;
+        this.forEach ( (element, index) => {
+            sum += element.amount;
+        });
+        return sum;
+}
+    
+console.log( orders.reduceNew(0));

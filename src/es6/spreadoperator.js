@@ -9,10 +9,12 @@ function doStuff (x,y,z) {
     console.log(x,y,z);
 }
 var args = [0,1,2];
+
 doStuff.apply(this,args);
-
-
 doStuff(...args);
+
+console.log(doStuff.apply(this, args));
+console.log(doStuff(...args));
 
 /*
 Copying Arrays
@@ -59,10 +61,11 @@ Much like copying arrays,
 Using Math Functions
 */
 let numbers = [9, 4, 7, 1];
-Math.min(...numbers); // 1
+console.log(Math.max.apply(this, numbers));
+console.log(Math.max(...numbers));
 
 /* Destructuring */
-let {x,y,...z} = {x:1,y:2,a:3,b:4,c:5}
+let {x, y, ...z} = {x:1 ,y:2, a:3, b:4, c:5}
 console.log(x);
 console.log(y);
 console.log(z);

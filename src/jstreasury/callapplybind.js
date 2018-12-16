@@ -1,4 +1,4 @@
-var obj = {num:2};
+var obj = { num:2 };
 
 var myFunc = function(...n) {
     console.log(this);

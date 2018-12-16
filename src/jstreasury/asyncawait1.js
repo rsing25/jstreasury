@@ -10,7 +10,10 @@
     async function f() {
         return 1;
     }
-    f().then(alert); // 1
+
+    f().then( (res) => {
+      console.log(res);
+    }); // 1
 
     /** We could explicitly return a promise, that would be the same:*/
     async function f() {
@@ -52,9 +55,9 @@
         try {
           let response = await fetch('/no-user-here');
           let user = await response.json();
-        } catch(err) {
+        } catch(error) {
           // catches errors both in fetch and response.json
-          alert(err);
+          console.log(error.message);
         }
       }      
 
