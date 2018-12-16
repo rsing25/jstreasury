@@ -132,7 +132,8 @@
         headers: {
           "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
         },
-        body: 'foo=bar&lorem=ipsum'
+        body: 'foo=bar&lorem=ipsum',
+        mode:'cors'
       })
       .then(json)
       .then(function (data) {

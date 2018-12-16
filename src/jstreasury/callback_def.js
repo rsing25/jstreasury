@@ -20,21 +20,21 @@
  * Basic Principles when Implementing Callback Functions
  1 Use Named OR Anonymous Functions as Callbacks
     arry.forEach( ()=> {}) // Anonymous Functions callacbl
-    createPost({title:'post three', body:'This is post three'}, getPosts); // Name Functions callback
 
 2 Pass Parameters to Callback Functions
     Since the callback function is just a normal function when it is executed, we can pass parameters to it. 
+    
+    createPost({title:'post three', body:'This is post three'}, getPosts); // Name Functions callback
+
 */
 
-
-/**Problem When Using Methods With The this Object as Callbacks
+/** Problem When Using Methods With The this Object as Callbacks
         When the callback function is a method that uses the this object, 
         we have to modify how we execute the callback function to preserve the this object context. 
 
         Use the Call or Apply Function To Preserve this
         We can fix the preceding problem by using the Call or Apply function
 */
-
 
 /** 
  * “Callback Hell” Problem And Solution
