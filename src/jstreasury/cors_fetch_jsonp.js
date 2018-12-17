@@ -2,6 +2,15 @@
 
 //Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain communication from the browser.
 
+/*
+cors with GET does NOT require server side code change
+cors with POST require Access-Control-Allow-Origin to * on server side" 
+
+response.addHeader( "Access-Control-Allow-Origin", "*" ); 
+response.addHeader( "Access-Control-Allow-Methods", "POST" ); 
+response.addHeader( "Access-Control-Max-Age", "1000" );
+*/
+
 //(1) Making a CORS Request using JSONP (JSON with Padding or JSON-P[1])
       //JSONP (JSON with Padding or JSON-P[1]) is a javascript pattern to request data by loading a <script> tag
 
@@ -33,7 +42,6 @@
 
   let promise = loadScript("https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js");
   promise.then( (script) => { console.log(`${script.src} is loaded!`) }, (error) => {console.log(`Error: ${error.message}`)} );
-
 
   
 // (2) Making a CORS Request using XMLHttpRequest
@@ -132,8 +140,7 @@
         headers: {
           "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
         },
-        body: 'foo=bar&lorem=ipsum',
-        mode:'cors'
+        body: 'foo=bar&lorem=ipsum'
       })
       .then(json)
       .then(function (data) {
