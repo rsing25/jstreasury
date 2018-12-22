@@ -36,3 +36,12 @@ Array.prototype.reduceNew = function (defalutVal) {
 }
     
 console.log( orders.reduceNew(0));
+
+// we can not pass an object
+// var totalAmount = orders.reduce( function(resultArr,order) {
+//         console.log("hello",resultArr,order);
+//         console.log(typeof resultArr);
+//         var returnVal = resultArr.push(order.amout)
+//         return returnVal;
+// }, []);
+// console.log(totalAmount);
