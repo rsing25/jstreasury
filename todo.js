@@ -59,3 +59,7 @@ Include padding and border in the element's total width and height:
 8. In React, what is the difference between state and props
 9. A 500 INTERNAL SERVER ERROR
 10. What is a scalable vector graphic?
+
+11 CSS ::before Selector
+Insert some text before the content of each <p> element:
+
