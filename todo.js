@@ -63,3 +63,11 @@ Include padding and border in the element's total width and height:
 11 CSS ::before Selector
 Insert some text before the content of each <p> element:
 
+
+in react
+pass data from parent to child using props
+pass data between siblibg component 
+
+pass data from child to parent
+
+server side rendeering 
