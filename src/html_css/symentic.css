@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+    display: block;
+}
+
+.banner {
+    background-color: #11233b;
+    color:#ffffff;
+    padding: 10px 20px
+}
+
+/* margin : 0 auto; to center the body of page */
+body {
+width: 960px;
+margin : 0 auto;
+
+font-family: Arial, Helvetica, sans-serif   ;
+font-size: 15px;
+}
+
+/*  margin-top: 1px 
+    to create small space between header and nav element*/
+nav {
+    background-color: #20416c;
+    padding: 5px;
+    margin-top: 1px;
+}
+
+li a {
+    color: white
+}
+
+/*links will apear in single line*/
+li {
+    display: inline-block;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight:bold;
+    font-variant:small-caps;
+}
+
+/* add 10px margin to create space between sactions*/
+/* 5px padding prevent article element too close*/
+section {
+    background-color: #bbbbbb;
+    margin-top:10px;
+    padding: 5px;
+}
+
+/* add 5px margin to create space between article elements*/
+/* 5px padding prevent article element too close*/
+
+article {
+    background-color: #ffffff;
+    margin-top:5px;
+
+}
+
+main {
+    width: 640px;
+    float: left;
+}
+
+aside {
+    width: 270px;
+    float: right;
+
+    background-color: #bbbbbb;
+    padding: 5px 20px;
+    color: white;
+}
+
+/* clear:both to prevent footer from going to top right*/
+footer {
+    clear: both;
+    
+}

@@ -1,0 +1,157 @@
+<!--
+
+non-semantic elements: <div> and <span> - Tells nothing about its content.  
+  Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer">
+
+Semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+HTML5 offers new semantic elements to define different parts of a web page:  
+
+<header>
+<main>
+  <nav>
+  <article>
+  <section>
+<aside>
+<footer>
+
+<details>
+<figcaption>
+<figure>
+<mark>
+<summary>
+<time>
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <!-- link element does not have closing tag 
+            href is value of .css file-->
+      <link rel="stylesheet" type="text/css" href="symentic.css">
+      
+      <!--ie8 and below older version of ie does not allow to
+          style the elements which they dont recognize
+          there is a soluntion of problem using javascript-->
+
+          <!--  [if lt IE 9]  >
+            <script>
+              document.createElement("article");
+              document.createElement("aside");
+              document.createElement("footer");
+              document.createElement("header");
+              document.createElement("main");
+              document.createElement("nav");
+              document.createElement("section");
+            </script>
+            <!  [endif] -->    
+    </head>
+    <body>
+
+      <!-- header element is used to group introductry content of section
+            I have added h1 elment heading elment for name and title of website
+            I have also added p elment to give description about type of news.
+      -->
+      <header class="banner">
+        <h1>News</h1>
+        <p>Local and National News</p>
+      </header>
+
+        <!-- nave element to add navigation section
+              we are using unordered list ul element 
+              and list itme elment is used for each item in unordered list.
+              I have placed the link inside each of them.
+        --> 
+      <nav>
+        <ul>
+        <li> <a href="index.html">HOme </a> </li>
+        <li> <a href="archive.html">Archives</a></li>
+        <li> <a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- main element  this is where main contnet of page is located
+        -->  
+      <main>
+
+        <!--
+          This web page main content will have  2 sections local news, national news.
+          section elemnt is used to group together generic block of related content. 
+          Lets use heading elment to indetify this section.
+        -->  
+        <section>
+          <h2>Local News</h2>
+            <!--
+            artical element is used to complete and self contained composition.
+            header element can be used inside artical element
+            so lets use h3 element for news story title, p for auther adn date
+            -->
+            <article>
+                <header>
+                    <h3> first news</h3>
+                    <p> (author , date)</p>
+                </header>
+                  <!--now we will add p for news story itself-->
+                 <p> This is story text</p>
+                 <p> This is story text</p>
+            </article>
+            <!--Lets add new different news story-->
+            <article>
+                <header>
+                    <h3> second news</h3>
+                    <p> (author , date)</p>
+                </header>
+                 <p> This is story text</p>
+                 <p> This is story text</p>
+            </article>
+        </section>
+       
+        
+        <!--we will use second section elemnt for nationa l news-->
+        <section> 
+            <h2>National News</h2>
+            <article>
+                <header>
+                  <h3> news three</h3>
+                  <p>(author date)</p>
+                </header>
+                  <p> This is story text</p>
+            </article>
+            <article>
+                <header>
+                    <h3> news four</h3>
+                    <p>(author date)</p>
+                  </header>
+                    <p> This is story text</p>
+            </article>
+        </section>
+      </main>
+
+
+        <!--
+        asside elment frquently assing as side bar
+        asside element is for content that is sepearted from content related around it.
+        what you inside this depends on where it is located
+
+        if it is inside the artical element it should be related to that article
+        since we using outside of article and inside body directly. 
+        it will be realted to web page as whole.
+        -->
+        <aside>
+            <h2>Be a news reporter</h2>
+            <p> if you see news send us text  </p>
+        </aside>
+
+        <!-- you can use it for copyright information or web page links
+              if it is inside the artical element it should be related to that article
+            since we using outside of article and inside body directly. 
+            it will be realted to web page as whole.
+         -->
+        
+        <footer>
+          <p> Footer information </p>
+        </footer>
+    </body>
+</html>

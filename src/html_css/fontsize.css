@@ -1,0 +1,18 @@
+/*
+
+REM as in Root EM. 
+While em is relative to the font size of its direct or nearest parent, 
+rem is only relative to the html (root) font-size 
+
+12pt	16px	1em    1rem (medium) base 
+
+
+10px    x-small
+13px    small 
+    16px    medium 
+18px    large
+24px    x-large
+32px    xx-large
+
+
+*/

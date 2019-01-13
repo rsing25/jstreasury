@@ -1,0 +1,52 @@
+<!--
+  image tag
+  Display inline
+  Null element    This element must not contain any content, and does not need a closing tag.
+
+  All <img> tags must have a defined src attribute.
+
+  because of historical reasons, the HTML specification (and all browsers, by default)
+  treat the <img> tag as if it is an inline element. Because of the way browsers handle white space,
+    this can cause problems if you are not careful.
+
+
+  A way of handling the inline image problem is to images into block elements with CSS.
+
+  img {
+    display: block;
+  }
+
+  Responsive Images
+  t's important to make sure that images display correctly across a wide variety of screen widths and window sizes.
+  One of the easiest techniques for accomplishing this is to use CSS to set the width (or the max-width) to 100%. 
+  This will ensure that the image is never too big for its container. 
+  When used in conjunction with a flexible-grid system, 
+  this optimizes the images display size for various screen widths
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Rajesh </title>
+<style>
+img {
+  display: block;
+}
+
+img {
+ width: 100%;
+ height: auto;
+}
+</style>
+</head>
+<body>
+
+   <h1>examples</h1> 
+
+   <h2>first para</h2>
+   <p>this is image <img src="symentic.png"></p>
+      
+</body>
+</html>

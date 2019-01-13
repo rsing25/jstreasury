@@ -71,3 +71,6 @@ pass data between siblibg component
 pass data from child to parent
 
 server side rendeering 
+
+Experience writing automated tests (we use Jest and Detox) *
+Javascript testing frameworks like Jasmine, Jest, Enzyme, etc. *
