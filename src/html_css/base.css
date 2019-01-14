@@ -1,0 +1,44 @@
+1 ) Type Selectors
+
+p {color: red; text-decoration: underline}
+
+2) Descendant Selectors
+
+// apply to all the childs
+li a {text-decoration: none};
+
+3) Id Selectors
+
+# intro {color: #00ff00}
+
+4) class Selectors start with period
+
+.dt{color: #ffffff}
+
+
+5) Pesduo classes
+
+a:link a:visited a:hover a:active 
+p:first-child   p:nth-child(4) 
+input:checked   input[type=text]:enabled
+
+6) univesal selector
+    * { box-sizing:border-box};
+
+7) Child Selector > Only target the elemnts immediate descewndants or "childrens"
+
+#nav > li {background: : url(folder.png)};
+
+<ul id = "nav">
+    <li></li>
+    <li></li>
+</ul>
+
+8) + Sibling selectors 
+fist para folling top level heading.
+
+h1 + p {font-weight:bold}
+
+9) Attribute selectors
+
+input[type=text]:enabled

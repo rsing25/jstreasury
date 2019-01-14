@@ -1,0 +1,25 @@
+<!--
+    he position property specifies the type of positioning method used for an element 
+
+1) relative	The element is positioned relative to its normal position, 
+            so "left:20px" adds 20 pixels to the element's LEFT position
+
+ an element’s original position remains in the flow of the document, 
+. But now left/right/top/bottom/z-index will work. 
+The positional properties “nudge” the element from the original position in that direction.            
+
+2) absolute	The element is positioned relative to its first positioned (not static) ancestor element
+ the element is removed from the flow of the document 
+ and other elements will behave as if it’s not even there whilst all the other positional properties will work on it.
+
+
+3) fixed	    The element is positioned relative to the browser window	
+
+ the element is removed from the flow of the document like absolutely positioned elements. In fact they behave almost the same,
+
+4) sticky	The element is positioned based on the user's scroll position
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+
+
+-->
