@@ -13,6 +13,9 @@ class Vehicle {
       return this.type;
     }
    
+    static create (name, type) {
+        return new Vehicle(name, type);
+      }
   }
   class Car extends Vehicle {
    
@@ -28,3 +31,7 @@ class Vehicle {
   let car = new Car('Tesla');
   console.log(car.getName()); // It is a car: Tesla
   console.log(car.getType()); // car
+
+  let car1 = Vehicle.create('Tesla', 'car');
+    console.log(car1.getName()); // Tesla
+    console.log(car1.getType()); // car
