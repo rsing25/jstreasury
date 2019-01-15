@@ -1,3 +1,6 @@
+https://javascript.info/
+https://javascript.info/object-methods
+https://javascript.info/event-delegation
 Allow-Control-Allow-Origin: *
 
 

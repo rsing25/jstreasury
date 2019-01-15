@@ -21,7 +21,7 @@ but will dramatically decrease the time complexity to 2N which will resolve to l
   var fibonacci = function(n, memo) {
     memo = memo || {};
 
-    if (n < 2){
+    if (n < 2) {
       return n
     }
     return fibonacci(n - 1, memo) + fibonacci (n - 2, memo)

@@ -9,6 +9,7 @@ img {
     z-index: -1;
 }
 =======================================================================================================================================
+Pseudo classes
 
 The :nth-child selector allows you to select one or more elements based on their source order,
 
@@ -28,8 +29,12 @@ p:last-child {
   font-size: 0.75em;
 }
 
+
+The :first-child selector allows you to target the last element directly inside its containing element.
+p:first-child {
+  font-size: 0.75em;
+}
 =======================================================================================================================================
-Pseudo classes
 
 /* unvisited link */
 a:link {

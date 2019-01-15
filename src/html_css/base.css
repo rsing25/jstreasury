@@ -25,7 +25,8 @@ input:checked   input[type=text]:enabled
 6) univesal selector
     * { box-sizing:border-box};
 
-7) Child Selector > Only target the elemnts immediate descewndants or "childrens"
+7) Child Selector > 
+Only target the elemnts immediate descewndants or "childrens"
 
 #nav > li {background: : url(folder.png)};
 

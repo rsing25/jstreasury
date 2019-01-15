@@ -66,9 +66,9 @@ console.log(Math.max(...numbers));
 
 /* Destructuring */
 let {x, y, ...z} = {x:1 ,y:2, a:3, b:4, c:5}
-console.log(x);
-console.log(y);
-console.log(z);
+console.log("x"+x);
+console.log("y"+y);
+console.log("z"+JSON.stringify(z));
 
 /* Eliminate duplicates from an Array:
     Set object which lets you store unique values of any type.
