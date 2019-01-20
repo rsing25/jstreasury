@@ -1,0 +1,37 @@
+<!--
+
+    SVG stands for Scalable Vector Graphics.
+    SVG defines vector-based graphics in XML format.
+
+    VG stands for Scalable Vector Graphics
+    SVG is used to define vector-based graphics for the Web
+    SVG defines the graphics in XML format
+    Every element and every attribute in SVG files can be animated
+    SVG is a W3C recommendation
+    SVG integrates with other W3C standards such as the DOM and XSL
+
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <!-- SVG circle effect-->
+
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        Sorry, your browser does not support inline SVG.  
+      </svg> 
+<!-- SVG blur effect-->
+<svg height="110" width="110">
+    <defs>
+      <filter id="f1" x="0" y="0">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+      </filter>
+    </defs>
+    <rect width="90" height="90" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)" />
+    Sorry, your browser does not support inline SVG.  
+  </svg>
+
+</body>
+</html>

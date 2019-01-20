@@ -100,4 +100,8 @@ child.__proto__ = parent; //This line sets animal to be a prototype of rabbit.
 console.log(child.getName());
 console.log(parent.getName());
 
-console.log(    parent.getName.call(child,null)     ); // IMP parent.getName no () just func name
+console.log(    parent.getName.call(child, null)     ); // IMP parent.getName no parenthesis () just func name
+
+console.log(    parent.getName.apply(child, null)    ); // IMP parent.getName no () just func name
+
+console.log(    parent.getName.bind(child, null)()    ); // IMP parent.getName no () just func name

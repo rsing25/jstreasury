@@ -23,7 +23,17 @@ makes it easier to design flexible responsive layout structure
 <head>
 <style>
 /* The flex container becomes flexible by setting the 
-    display: flex: 
+    display: flex;
+    align-items: center; // can be center
+    justify-content:center: 
+
+    align-items property to align the items vertically.
+
+    The justify-content property aligns the flexible container's items 
+    when the items do not use all available space on the main-axis (horizontally).
+
+
+        //The align-self property specifies the alignment for the selected item inside the flexible container.
 
         //he column value stacks the flex items vertically (from top to bottom):
         flex-direction:  column;
@@ -49,15 +59,21 @@ makes it easier to design flexible responsive layout structure
   display: flex;
   flex-direction: column;
   background-color: DodgerBlue;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .flex-container > div {
   background-color: #f1f1f1;
   width: 100px;
   margin: 10px;
-  text-align: center;
   line-height: 75px;
   font-size: 30px;
+
+  align-self: center;
+  text-align: center;
+
 }
 </style>
 </head>

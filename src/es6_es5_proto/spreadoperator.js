@@ -27,6 +27,15 @@ var arr2 = ['3', '4', '5'];
 arr1.push(...arr2) // Adds arr2 items to end of array
 console.log(...arr1);
 
+/*
+In es5  concat() method is used to join two or more arrays.
+This method does not change the existing arrays, 
+but returns a new array, containing the values of the joined arrays.
+*/
+var arr1 = ['1', '2'];
+var arr2 = ['3', '4', '5'];
+var result = arr2.concat(arr1);
+
 arr1.unshift(...arr2) //Adds arr2 items to beginning of array
 console.log(...arr1);
 

@@ -123,3 +123,14 @@ p.growOlder();
 console.log(p.getAge()); // 26
 
 console.log(p.age); //undefined
+
+  var person1 = {
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  var person2 = {
+    firstName:"John",
+    lastName: "Doe",
+  }
+  var x = person1.fullName.call(person2); 
