@@ -79,3 +79,12 @@ Props manipulation
  
    * Reducers are pure functions which specify how the application’s state changes in response to an ACTION. 
    */
+
+/*
+  getDerivedStateFromProps is invoked right before calling the render method, both on the initial mount and on subsequent updates. It should return an object to update the state, or null to update nothing.
+
+  static getDerivedStateFromProps(nextProps, prevState) {
+    return { ...store.getState() };
+  }
+  
+  */
