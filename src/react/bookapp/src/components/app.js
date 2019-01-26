@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import BookList from "./book_list";
-import BookDetail from "./book_detail";
+import BookList from "../containers/book-list";
+import BookDetail from "../containers/book-detail";
 
 const styles = {
 	fontFamily: "sans-serif",
