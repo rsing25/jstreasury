@@ -29,7 +29,13 @@ function TreeNode(val, left, right) {
 
 var isSame = function (left, right) {
   if (!left && !right) return true;
-  if (!left || !right || right.val !== left.val) {
+  if (!left || !right) {
+    return false;
+  }
+  if (!left.val && !right.val && left !== right) {
+    return false;
+  }
+  if (left.val && right.val && left.val !== right.val) {
     return false;
   }
   return isSame(left.left, right.right) && isSame(left.right, right.left);
@@ -39,6 +45,9 @@ var isSymmetric = function(root) {
   if (!root) return true;
   return isSame(root.left, root.right);
 };
+var n0 = new TreeNode(2,3,4);
+
+console.log( isSymmetric(n0) );
 
 var n1 = new TreeNode(2,3,4);
 var n2 = new TreeNode(2,4,3);
