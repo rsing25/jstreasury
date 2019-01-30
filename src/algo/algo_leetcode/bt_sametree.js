@@ -15,6 +15,17 @@ function TreeNode(val, left, right) {
 
 var isSameTree = function(left, right) {
     if (!left && !right) return true;
-    if (!left || !right || left.val !== right.val) return false;
+    if (!left || !right) return false;
+    if (!left.val && !right.val && left !== right) {
+        return false;
+    }
+    if (left.val && right.val && left.val !== right.val) {
+        return false;
+    }
     return isSameTree(left.left, right.left) && isSameTree(left.right, right.right);
 };
+
+var n1 = new TreeNode(2,3,4);
+var n2 = new TreeNode(2,3,4);
+
+console.log( isSameTree(n1, n2) );
