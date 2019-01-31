@@ -40,16 +40,16 @@ function TreeNodeWrapper(val, left, right) {
      return node;
 }
 
-function post_order(root, nodes) {
+function post_order(root, result) {
     if (root && root.left) {
-        post_order(root.left, nodes);   
+        post_order(root.left, result);   
     }
     if (root && root.right) {
-        post_order(root.right, nodes);  
+        post_order(root.right, result);  
     }
     // post_order => [ D, E, B, C, A ]
-    nodes.push(root.val);
-    return nodes;
+    result.push(root.val);
+    return result;
 }
 
 

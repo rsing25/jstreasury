@@ -37,20 +37,20 @@ function TreeNodeWrapper(val, left, right) {
      return node;
 }
 
-function in_order(root, nodes) {
+function in_order(root, result) {
     if (root && root.left) {
         console.log("root.left calling  --> "+root.left.val);
-        in_order(root.left, nodes);   
+        in_order(root.left, result);   
     }
     console.log("root.val --> "+root.val);
 
     // in_order => [ D, B, E, A, C ]
-    nodes.push(root.val);
+    result.push(root.val);
     if (root && root.right) {
         console.log("root.right calling  --> "+root.right.val);
-        in_order(root.right, nodes);  
+        in_order(root.right, result);  
     }
-    return nodes;
+    return result;
 }
 
 // create nodes
