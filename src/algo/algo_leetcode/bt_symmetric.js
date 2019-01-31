@@ -31,13 +31,22 @@ function TreeNode(val) {
 function TreeNodeWrapper(val, left, right) {
   var node = new TreeNode(val);
    if(left != null) {
-      node.left = new TreeNode(left);
+       if(left instanceof TreeNode) {
+          node.left = left;
+       } else {
+          node.left = new TreeNode(left);
+       }
    }
    if (right != null) {
-      node.right = new TreeNode(right);
-   }
+      if(right instanceof TreeNode) {
+          node.right = right;
+       } else {
+          node.right = new TreeNode(right);
+       }     
+  }
    return node;
 }
+
 var isSame = function (left, right) {
   if (!left && !right) return true;
   if (!left || !right) {
