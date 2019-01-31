@@ -21,48 +21,56 @@
 
 /**
  * Definition for a binary tree node.*/
-function TreeNode(val, left, right) {
-    this.val = val;
-    this.left = left || null;
-    this.right = right || null;
+
+function TreeNode(val) {
+  this.val = val;
+  this.left = null;
+  this.right = null;
 }
 
+function TreeNodeWrapper(val, left, right) {
+  var node = new TreeNode(val);
+   if(left != null) {
+      node.left = new TreeNode(left);
+   }
+   if (right != null) {
+      node.right = new TreeNode(right);
+   }
+   return node;
+}
 var isSame = function (left, right) {
   if (!left && !right) return true;
   if (!left || !right) {
     return false;
   }
-  if (!left.val && !right.val && left !== right) {
-    return false;
-  }
   if (left.val && right.val && left.val !== right.val) {
     return false;
   }
+  // if (!left.val && !right.val && left !== right) {
+  //   return false;
+  // }
   return isSame(left.left, right.right) && isSame(left.right, right.left);
 };
+
+
 var isSymmetric = function(root) {
   console.log(JSON.stringify(root));
   if (!root) return true;
   return isSame(root.left, root.right);
 };
-var n0 = new TreeNode(2,3,4);
+var n0 = new TreeNodeWrapper(2,3,4);
 
-console.log( isSymmetric(n0) );
+console.log("n0 "+ isSymmetric(n0) );
 
-var n1 = new TreeNode(2,3,4);
-var n2 = new TreeNode(2,4,3);
+var n1 = new TreeNodeWrapper(2,3,4);
+var n2 = new TreeNodeWrapper(2,4,3);
 
-var n3 = new TreeNode(1,n1,n2);
-console.log( isSymmetric(n3) );
+var n3 = new TreeNodeWrapper(1,n1,n2);
+console.log("n3 "+ isSymmetric(n3) );
 
 
-var n4 = new TreeNode(2,null,3);
+var n4 = new TreeNodeWrapper(2,null,3);
 
-var n5 = new TreeNode(1,n4,n4);
-console.log( isSymmetric(n5) );
+var n5 = new TreeNodeWrapper(1,n4,n4);
+console.log("n5 "+ isSymmetric(n5) );
 
-// var n1 = new TreeNode(2,3,3);
-// var n1 = new TreeNode(2,4,4);
-
-// var n2 = new TreeNode(1,n1,n2);
-// console.log( isSymmetric(n2) );
