@@ -1,11 +1,15 @@
-//A pre-order traversal on a tree performs the following steps starting from the root:
+//An in-order traversal on a tree performs the following steps starting from the root:
 
 /*
+1) Traverse the left subtree by recursively calling the in-order function.
+2) Return the root node value.
+3) Traverse the right subtree by recursively calling the in-order function.
 
-1) Return the root node value.
-2) Traverse the left subtree by recursively calling the pre-order function.
-3) Traverse the right subtree by recursively calling the pre-order function.
-
+//     A
+//    / \
+//   B   C
+//  / \ 
+// D  E 
 */
 
 function TreeNode(val) {
@@ -33,24 +37,21 @@ function TreeNodeWrapper(val, left, right) {
      return node;
 }
 
-function pre_order(root, result) {
-    result.push(root.val);
+function in_order(root, nodes) {
     if (root && root.left) {
-        pre_order(root.left, result);   
+        console.log("root.left calling  --> "+root.left.val);
+        in_order(root.left, nodes);   
     }
+    console.log("root.val --> "+root.val);
+
+    // in_order => [ D, B, E, A, C ]
+    nodes.push(root.val);
     if (root && root.right) {
-        pre_order(root.right, result);  
+        console.log("root.right calling  --> "+root.right.val);
+        in_order(root.right, nodes);  
     }
-    return result;
+    return nodes;
 }
-
-var n11 = new TreeNodeWrapper(a,3,4);
-var n22 = new TreeNodeWrapper(2,4,3);
-
-var n33 = new TreeNodeWrapper(1,n11,n22);
-
-console.log(pre_order(n33, [])); // => [ A, B, D, E, C ]
-
 
 // create nodes
 var root = new TreeNode('A');
@@ -64,4 +65,4 @@ root.left = n1;
 root.right = n2;
 n1.left = n3;
 n1.right = n4;
-console.log(pre_order(root, [])); // => [ A, B, D, E, C ]
+console.log(in_order(root, [])); // => [ D, B, E, A, C ]
