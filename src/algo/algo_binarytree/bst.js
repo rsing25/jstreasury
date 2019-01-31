@@ -52,3 +52,60 @@ bst.push(5);
 
 console.log(JSON.stringify(bst));
 
+
+function minNode(node){
+    if(!node){
+       return 0;
+    }
+    if(node.left){
+      return minNode(node.left)
+   }
+   return node.value
+ }
+ console.log(minNode(bst.root));
+
+ function maxNode(node){
+    if(!node){
+      return 0;
+   }
+   if(node.right){
+      return maxNode(node.right)
+   }
+   return node.value;
+ }
+
+ console.log(maxNode(bst.root));
+
+ function isBST(node){
+    if(!node){
+      return true; 
+   }
+ 
+   if(node.left != null && node.left.value > node.value){ 
+     return false;
+   }
+ 
+   if(node.right !=null && node.right.value < node.value) {
+     return false;
+   }
+ 
+   if(!isBST(node.left) || !isBST(node.right)) {
+     return false;
+   }
+ 
+   return true;  
+ }
+
+ console.log(isBST(bst.root));
+
+
+ function height(node){
+    if(!node) return 0;
+    var leftHeight = height(node.left);
+    var rightHeight = height(node.right);
+ 
+    return Math.max(leftHeight, rightHeight) + 1;
+ }
+
+ console.log(height(bst.root));
+
