@@ -39,8 +39,8 @@ y.split('').reverse().join(''); // "2,1"
 var str = '123';
 
 str.split("").reduce((revStr, char)=> {
-    char + revStr, ''
-});
+    return char + revStr
+},'');
 
 
 // array.join(separator)

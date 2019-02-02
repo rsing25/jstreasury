@@ -1,17 +1,17 @@
-// function Node(val){
-//     this.value = val;
-//     this.next = null;
-//     this.previous = null;
-// }
+function Node(val){
+    this.value = val;
+    this.next = null;
+    this.previous = null;
+}
    
 function DoublyLinkedList(){
     this.head = null;
  }
  
  DoublyLinkedList.prototype.push = function(val){
-    var head = this.head,
-        current = head,
-        previous = head;
+    var head = this.head;
+    var  current = head;
+    var  previous = head;
    if(!head) {
        this.head = {value: val, previous:null, next:null };
     } else {

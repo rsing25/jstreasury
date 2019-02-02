@@ -13,10 +13,10 @@ function LinkedList(){
 LinkedList.prototype.push = function(val){
     var node  = new ListNode(val);
 
-    if(!this.head){
+    if(!this.head) {
       this.head = node;      
     }
-    else{
+    else {
       current = this.head;
       while(current.next){
         current = current.next;
