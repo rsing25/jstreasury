@@ -42,15 +42,22 @@ function reverse(head) {
   var previous = null;
   var tmp = null;
 
-  while (node) {
+  
+  while (node && node != null) {
+    console.log("node"+JSON.stringify(node));
+    console.log("node.next"+JSON.stringify(node.next));
+    console.log("previous"+JSON.stringify(previous));
+    console.log("tmp"+tmp);
+
     // save next before we overwrite node.next!
     tmp = node.next;
 
+    
     // reverse pointer
     node.next = previous;
-
     // step forward in the list
     previous = node;
+
     node = tmp;
   }
 

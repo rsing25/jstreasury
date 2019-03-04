@@ -29,6 +29,9 @@ myStack.pop(); //2
 myStack.pop(); //1
 
 
+remove an particular elemnt from array
+myQueue.splice(index,1)
+
 //Queue is pretty much same. other than calling pop you will use shift method to get the element in the front side of your array.
 
 var myQueue = [];
@@ -43,3 +46,6 @@ myQueue.shift(); //1
 myQueue.shift(); //2
 myQueue.shift(); //3
 
+
+remove an particular elemnt from array
+myQueue.splice(index,1)

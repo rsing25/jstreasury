@@ -4,13 +4,13 @@
 // and value at the right is higher than the value of the root.
 
 
-function Node(val){
+  function Node(val) {
     this.value = val;
     this.left = null;
     this.right = null;
   }
    
-  function BinarySearchTree(){
+  function BinarySearchTree() {
     this.root = null;
   }
   
