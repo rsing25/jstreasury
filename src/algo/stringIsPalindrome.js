@@ -1,8 +1,8 @@
 // return true if string is Palindrome
 
 function isPalindrome(str) {
-str = str.replace(/\W/g, '').toLowerCase(); 
-return (str == str.split('').reverse().join(''));
+    str = str.replace(/\W/g, '').toLowerCase(); 
+    return (str == str.split('').reverse().join(''));
 }
 console.log(isPalindrome("level")); 
 console.log(isPalindrome("levels"));

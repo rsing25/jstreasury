@@ -3,11 +3,11 @@ function Vehicle (name, type) {
     this.type = type;
   };
    
-  Vehicle.prototype.getName = function getName () {
+  Vehicle.prototype.getName = function() {
     return this.name;
   };
    
-  Vehicle.prototype.getType = function getType () {
+  Vehicle.prototype.getType = function() {
     return this.type;
   };
 
@@ -18,7 +18,6 @@ function Vehicle (name, type) {
   
   Car.prototype = Object.create(Vehicle.prototype);
   Car.prototype.constructor = Car;
-  Car.parent = Vehicle.prototype;
   
   Car.prototype.getName = function () {
     return 'It is a car: '+ this.name;

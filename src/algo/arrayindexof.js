@@ -10,5 +10,6 @@ var a = fruits.indexOf("Apple", 4); //6
 // string.indexOf(searchvalue, start)
 // earchvalue Required. The string to search for
 // start Optional. Default 0. At which position to start the search
-var str = "Hello world, welcome to the universe."; var n = str.indexOf("welcome"); //13
+var str = "Hello world, welcome to the universe."; 
+var n = str.indexOf("welcome"); //13
 var n = str.indexOf("wel"); //13

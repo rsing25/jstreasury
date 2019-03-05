@@ -8,4 +8,13 @@ var result = ages.find(function(age){
     return age >= 18
 });
 
-console.log(result);
+console.log(result); // 18
+
+
+
+
+var result = ages.findIndex(function(age){
+    return age >= 18
+});
+
+console.log(result); //2

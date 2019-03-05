@@ -1,41 +1,28 @@
-Array instanceof Object
-returns true
-
-Array -> Function.prototype -> Object.prototype
-Object -> Function.prototype -> Object.prototype
-
-Array instanceof Function // true
-Object instanceof Function // true
 
 
-Array.isArray() method determines whether the passed value is an Ar
-Array.isArray([1, 2, 3]);  // true
+=========================================================================================================
+1 primitive types
 
+In JavaScript, there are 5 primitive types.
 
-
-
-The "typeof" operator in JavaScript allows you to probe the data type of its operand, 
-such as whether a variable is string, numeric, or even undefined.
-
-
-"number"	Operand is a number
-"string"	Operand is a string
-"boolean"	Operand is a Boolean
-"object"	Operand is an object
-null		Operand is null.
-"undefined"	Operand is not defined.
-
-
-
-
-Also in JavaScript, there are 5 primitive values.
-Both null and undefined are primitive values. 
+Both null and undefined are primitive types. 
 
 Boolean
 Number
 String
 Null
 Undefined
+
+typeof "Nicholas" 	//	"string"
+typeof of 10 		//	"number"
+typeof of true 		//	"boolean"
+typeof undefined    // "undefined"
+
+typeof null // "object" mistake
+
+"5" == 5 true
+"5" === 5 false
+
 
 
 
@@ -58,3 +45,71 @@ For example:
 let b;
 console.log(b);
 // undefined
+
+=========================================================================================================
+
+
+
+2 Reference types : 
+Reference types represent objects in javascript.
+an object is an unordered list of properties consisting of name and value;
+
+
+Reference types do not stgore the object directluy into variable.
+instead it holds a pointer to the location im memory.
+
+var object1 = new Object();
+var object2 = object1;
+
+both will point to same object.
+
+
+Array
+Date
+Error
+Function
+Object
+RegExp 
+
+function x() {}
+
+typeof x	// "function"
+
+y = {};
+
+typeof y       //"object"
+
+
+z = [];
+
+typeof z		//"object"
+
+Array.isArray(z) // true
+
+
+
+
+
+var items = [];
+var object = {};
+function fn() {
+
+}
+
+
+items instanceof Array // true
+object instanceof Object  // true
+fn instanceof Function // true
+
+
+
+
+=========================================================================================================
+Array instanceof object //returns true
+
+Array -> Function.prototype -> Object.prototype
+Object -> Function.prototype -> Object.prototype
+
+Array instanceof Function // true
+Object instanceof Function // true
+

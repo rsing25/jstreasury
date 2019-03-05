@@ -8,7 +8,8 @@ var reversedWordsArr = [];
 wordsArr.forEach(word => {
 var reversedWord = '';
 // Reverse String : Looping every word in backword for 
-reversedWordsArr.push(word.split('').reverse().join('');); 
+reversedWordsArr.push(word.split('').reverse().join(''));
+
 });
 return reversedWordsArr.join(' '); 
 }

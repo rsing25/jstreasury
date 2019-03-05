@@ -8,8 +8,9 @@ console.log(maxNumber);
 // The reduce() method executes a provided function for each value of the array (from left-to-right).
 // The return value of the function is stored in an accumulator (result/total).
 var arr = [1,20,3,4];
-var largest = arr.reduce(function(x,y){
+var largest = arr.reduce(function(x,y) {
      return (x > y) ? x : y;
-});
+},0);
 
+console.log(largest);
 
