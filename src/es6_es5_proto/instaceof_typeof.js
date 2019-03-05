@@ -64,6 +64,7 @@ var object2 = object1;
 both will point to same object.
 
 
+there are 6 build in Reference types
 Array
 Date
 Error
