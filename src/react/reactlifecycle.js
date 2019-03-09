@@ -1,4 +1,4 @@
-/*
+
 where an ideal, or “virtual”, representation of a UI is kept in memory 
 and synced with the “real” DOM by a library such as ReactDOM. 
 This process is called reconciliation.
@@ -43,4 +43,3 @@ componentDidUpdate(prevProps) {
 
 5 componentWillUnmount() is invoked immediately before a component is unmounted and destroyed.
 
-*/

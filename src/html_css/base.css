@@ -20,7 +20,21 @@ li a {text-decoration: none};
 
 a:link a:visited a:hover a:active 
 p:first-child   p:nth-child(4) 
-input:checked   input[type=text]:enabled
+
+input:checked {
+  height: 50px;
+  width: 50px;
+}
+
+input[type=text]:enabled {
+  background: #ffff00;
+}
+
+input[type=text]:disabled {
+  background: #dddddd;
+}
+
+
 
 6) univesal selector
     * { box-sizing:border-box};
@@ -42,4 +56,8 @@ h1 + p {font-weight:bold}
 
 9) Attribute selectors
 
-input[type=text]:enabled
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}

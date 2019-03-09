@@ -1,9 +1,13 @@
-/*
-Module Pattern
-Closure : closure are block that access the data outside of its scope
-*/
 
-/*
+
+Module Pattern
+
+
+
+=========A) module pattern using Closure=============================
+
+Closure : closure are block that access the data outside of its scope
+
 1 Creating a module
 
 First we start using a anonymous closure.
@@ -24,9 +28,7 @@ This pattern is well known as a Immediately Invoked Function Expression or IIFE.
 The function is evaluated then immediately invoked. Its also a good practice to run your modules in ES5 strict mode. 
 Strict mode will protect you from some of the more dangerous parts in JavaScript.
 
-*/
-
-/*
+=========================================================================================
 
 2 Exporting our module
 Next we will want to export our module. 
@@ -41,14 +43,13 @@ var myModule =
     }
 ());
 
-*/
 
-/** 
  
 Either way is fine var x = ( function(){} () ); or
 Either way is fine var x = ( function(){} )();
 
-*/
+=========================================================================================
+
 
 var module = (  
     function() {
@@ -64,8 +65,7 @@ var module = (
 
 module.publicMethod();
 
-/**
- 
+========================================================================================= 
 4 Private methods & properties
 JavaScript does not have a private keyword by default but using closures 
 we can create private methods and private state.
@@ -73,8 +73,7 @@ we can create private methods and private state.
 An important feature of closures is that an inner function 
 still has access to the outer function’s variables.
 
- */
-
+ 
 
 var person = (
     function() {
@@ -98,7 +97,9 @@ person.growOlder();
 console.log(person.getAge()); //26
 
 console.log(person.age);
-// module pattern using Constructor Function 
+
+=========B)  mmodule pattern using Constructor Function=============================
+
 
 function PersonF(name) {
 
@@ -124,6 +125,9 @@ console.log(p.getAge()); // 26
 
 console.log(p.age); //undefined
 
+========================================**************=================================================
+
+
   var person1 = {
     fullName: function() {
       return this.firstName + " " + this.lastName;
@@ -134,3 +138,14 @@ console.log(p.age); //undefined
     lastName: "Doe",
   }
   var x = person1.fullName.call(person2); 
+
+
+
+
+
+
+========================================**************=================================================
+
+
+
+

@@ -42,8 +42,9 @@ function Square(s){
     this.len =s;
     this.w = s;
 }
-Square.prototype = new Rectangle();
-Square.prototype.construcgor = Square;
+Square.prototype = Object.create(Rectangle.prototype);
+Square.prototype.constructor = Square;
+
 
 var sq = new Square(5);
 sq.getArea();
