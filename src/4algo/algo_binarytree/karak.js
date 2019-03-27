@@ -1,4 +1,12 @@
 /*
+When designing web front-ends for internationalization across multiple (human) languages, what are some common concerns to keep in mind?
+What is dependency injection? How does it help manage the complexity of a piece of software?
+What is the difference between composition and inheritance? When would you use one over the other?
+- Front-end web development
+  - Building user interfaces for web services and sites.
+- Object-oriented design
+  - Best practices for building classes and systems of classes.
+/*
 
 Suppose we have some input data describing a graph of relationships between parents and children over multiple generations. The data is formatted as a list of (parent, child) pairs, where each individual is assigned a unique integer identifier.
 
