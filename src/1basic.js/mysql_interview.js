@@ -61,9 +61,9 @@ insert into Grades values
 
 /* End test data */
 
-/*
+
 SELECT Students.id, Students.name,Teachers.name FROM Students LEFT JOIN Teachers ON Students.primary_teacher_id = Teachers.id
-*/
+
 
 /*
 We want to identify the school’s top-performing students. Design a query, prepared statement, or stored procedure that will select only those students whose average score (across all assignments) are in the top 50% of all students, and rank them by their score. Exclude those students who have never completed an assignment.
