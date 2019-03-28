@@ -21,10 +21,10 @@ Promise.prototype.newall = function () {
 // Example
 
 Promise.newall([promise1, promise2,promise3])
-  .then(results => {
-    results.forEach( (resultVal) => {
-      console.log(resultVal);
-    });
+  .then( (results) => {
+      results.forEach( (resultVal) => {
+        console.log(resultVal);
+      });
 
   })
   .catch(err => {

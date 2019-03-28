@@ -56,7 +56,7 @@ var arr = [1,2,3];
 var arr2 = [...arr]; // like arr.slice()
 arr2.push(4)
 
-console.log(arr2);
+console.log(arr2); // [1, 2, 3, 4]
 
 /*Convert arguments or NodeList to Array
 Much like copying arrays,

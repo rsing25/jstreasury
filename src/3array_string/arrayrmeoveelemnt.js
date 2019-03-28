@@ -45,6 +45,7 @@ class LookupTable {
       return keya == key;
     });
 
+    // splice(indx,1) to remove elment from array
     this.keyArr.splice(indx,1);
 
     this.valArr.splice(indx, 1);
