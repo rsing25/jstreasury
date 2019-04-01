@@ -33,7 +33,7 @@ x.reverse() //[2, 1]
 var y = "1,2";
 
 y.split(',').reverse();//[2,1]
-y.split('').reverse().join(''); // "2,1"
+y.split('').reverse().join(''); // "2,1"  // IMP BOTH SPLIT AND JOIN NEED QUOTES ''
 [...y].reverse().join('');
 
 var str = '123';
