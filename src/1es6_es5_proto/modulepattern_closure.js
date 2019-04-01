@@ -139,7 +139,7 @@ console.log(p.age); //undefined
   }
   var x = person1.fullName.call(person2); 
 
-
+  console.log(x) //John Doe
 
 
 

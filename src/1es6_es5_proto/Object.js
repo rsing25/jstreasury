@@ -39,8 +39,7 @@ function Rectangle (len,w){
     }
 }
 function Square(s){ 
-    this.len =s;
-    this.w = s;
+    Rectangle.call(this,s,s);
 }
 Square.prototype = Object.create(Rectangle.prototype);
 Square.prototype.constructor = Square;
