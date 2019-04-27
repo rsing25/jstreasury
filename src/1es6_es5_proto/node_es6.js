@@ -1,6 +1,11 @@
-express - Express.js—or simply Express—a Sinatra-inspired web development framework for Node.js, and the de-facto standard for the majority of Node.js applications out there today.
-hapi - a very modular and simple to use configuration-centric framework for building web and services applications
-connect - Connect is an extensible HTTP server framework for Node.js, providing a collection of high performance “plugins” known as middleware; serves as a base foundation for Express.
+express - Express.js—or simply Express—a Sinatra-inspired web development framework for Node.js, 
+and the de-facto standard for the majority of Node.js applications out there today.
+
+hapi - a very modular and simple to use configuration-centric framework 
+for building web and services applications
+
+connect - Connect is an extensible HTTP server framework for Node.js, 
+providing a collection of high performance “plugins” known as middleware; serves as a base foundation for Express.
 
 
 
@@ -51,6 +56,30 @@ console.log(calculator.add(2,2)) // prints 4
 
 import calculator from './calculator';
 console.log(calculator);
+
+===================================================================================================================================================
+node js promise example
+
+var Promise = require('promise');
+var MongoClient = require('mongodb').MongoClient;
+var url = 'mongodb://localhost/EmployeeDB';
+MongoClient.connect(url)
+
+.then(function(db) {
+    db.collection('Employee').insertOne({
+        Employeeid: 4,
+        EmployeeName: "NewEmployee"
+    })
+
+    .then(function(db1) {
+        db1.collection('Employee').insertOne({
+            Employeeid: 5,
+            EmployeeName: "NewEmployee1"
+        })
+    })
+});
+
+===================================================================================================================================================
 
 
 

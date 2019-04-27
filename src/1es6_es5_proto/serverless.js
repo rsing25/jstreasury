@@ -1,4 +1,5 @@
 class LookupTable {
+  
   constructor() {
     this.keyArr = [];
     this.valArr = [];

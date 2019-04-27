@@ -2,7 +2,10 @@ Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execut
 unwanted actions on a web application in which they're currently authenticated.
 
 
-Fortunately, this request will not be executed by modern web browsers thanks to same-origin policy restrictions. This restriction is enabled by default unless the target web site explicitly opens up cross-origin requests from the attacker's (or everyone's) origin by using CORS with the following header:
+Fortunately, this request will not be executed by modern web browsers thanks to same-origin policy restrictions. 
+This restriction is enabled by default 
+
+UNLESS the target web site explicitly opens up cross-origin requests from the attacker's (or everyone's) origin by using CORS with the following header:
 Access-Control-Allow-Origin: *
 
 
