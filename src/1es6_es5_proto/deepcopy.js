@@ -26,7 +26,8 @@ let obj = {
   
 
 
-// Using JSON.parse(JSON.stringify(object));
+  // using
+  JSON.parse(JSON.stringify(object));
 // This fixes the issue we had earlier. Now newObj.b has a copy and not a reference! This is a way to deep copy objects. Here's an example:
 
 let obj = { 

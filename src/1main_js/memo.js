@@ -1,5 +1,7 @@
 "use strict"
 
+// memo function to cache the results
+
 var helloWorld = function(x,y) {
     console.log(x,y);
 }

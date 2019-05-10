@@ -1,3 +1,16 @@
+var x = "1" + 2+ 3;  // "123"
+var x = 1 + "2" + 3; // "123"
+var x = 1 + 2 + "3"; //"33"
+
+Javascript ture =1  false =0 
+
+3 > 4 >0 // false	[ 3 > 4 is false  , since false is equivalent to 0 ,  0 >0 is false ]
+4 > 3 >0 // true    [ 4 > 3 is ture  , since true is equivalent to 1 ,  1 >0 is true ]
+
+
+
+
+
 looper framwork
 typescript
 
