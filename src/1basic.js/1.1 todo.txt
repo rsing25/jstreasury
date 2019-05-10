@@ -1,2 +1,34 @@
 looper framwork
 typescript
+
+Proficient with SOLR
+Proficient with Java and WebObjects
+
+
+string s = "[{{}}]]""
+
+const arr = s.split("");
+
+
+
+Kumbha 5 decent
+
+
+
+Meena 6 [Best]
+Mesh 7th ok
+
+Kaek 11 
+
+
+
+
+onBlur: this event is raised when a select, text, or textarea form item is acted upon and then moved off of by the user. In other words, when the item losses focus the onBlur event is raised.
+
+onChange : this event is raised when the text in a select, text, or textarea form item is altered by the user.
+
+onClick: this event is raised when the user clicks the user clicks on an object, for example: button, image, hyperlink, etc.
+
+onFocus: thisevent is raised when a select, text or textarea items is selected on an HTML form.
+
+onSelect: this event, as its name implies, is raised when some tex in a text box or text area is selected.
