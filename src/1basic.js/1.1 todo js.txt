@@ -48,3 +48,10 @@ onClick: this event is raised when the user clicks the user clicks on an object,
 onFocus: thisevent is raised when a select, text or textarea items is selected on an HTML form.
 
 onSelect: this event, as its name implies, is raised when some tex in a text box or text area is selected.
+
+
+
+
+ Rundeck - to schedule spark jobs Hive - Database on top of HDFS HDFS - hadoop distributed file system HUE - Query tool for HIVE Pig - Like PLSQL in HIVE 
+
+
