@@ -55,6 +55,8 @@ function reverse(head) {
     
     // reverse pointer
     node.next = previous;
+
+    
     // step forward in the list
     previous = node;
 

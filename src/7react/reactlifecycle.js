@@ -1,3 +1,37 @@
+https://reactjs.org/docs/react-component.html
+version 16.7
+
+The Component Lifecycle
+================================================================================================================================
+
+
+Mounting
+These methods are called in the following order when an instance of a component is being created and inserted into the DOM:
+
+1-	constructor()
+2-	static getSnapshotBeforeUpdate(prevProps, prevState)
+3-	render()
+4-	componentDidMount()
+
+================================================================================================================================
+
+Updating
+An update can be caused by changes to props or state. These methods are called in the following order when a component is being re-rendered:
+
+1- static getSnapshotBeforeUpdate(prevProps, prevState)
+2- shouldComponentUpdate()
+3- render()
+4- getSnapshotBeforeUpdate()
+5- componentDidUpdate()
+================================================================================================================================
+
+Unmounting
+This method is called when a component is being removed from the DOM:
+
+componentWillUnmount()
+================================================================================================================================
+
+
 
 where an ideal, or “virtual”, representation of a UI is kept in memory 
 and synced with the “real” DOM by a library such as ReactDOM. 
