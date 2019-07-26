@@ -1,0 +1,62 @@
+what is viewport?
+
+
+style.css:
+
+```css
+
+h1 {
+  color: red;
+  font-family: sans-serif, Arial;
+}
+
+.header {
+  color: blue;
+}
+
+p>span {
+  color: yellow;
+}
+
+div>span {
+  color: green;
+  font-family: serif;
+}
+
+img {
+  width: 192px;
+  height: 174px;
+}
+```
+
+index.html:
+```html
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <title>Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">
+    <div id="page1">
+      <p class="top">
+        <span class="header">
+          Favorite apple type?
+        </span>
+      <p>
+    </div>
+  </h1>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" width="97" height="87">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" width="97" height="87">
+
+  <form action="" method="post">
+    <input type="text" id="apple_type" name="gala" value="choice" />
+    <input type="number" id="apple_count" name="count" value="3" />
+    <input type="submit" value="send" />
+  </form>
+</body>
+</html>
+```html
