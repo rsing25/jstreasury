@@ -1,0 +1,45 @@
+
+const getCombinations = (str) => {
+    
+    const recFn = (current, rest, a) => {
+        if(!current && !rest) {
+            return;
+        }
+        if(!rest) {
+            a.push(current);
+        } else {
+           recFn(current+rest[0],rest.slice(1),a);
+           recFn(current, rest.slice(1),a);
+        }
+        return a;
+    }
+    return recFn("",str,[]);
+}
+
+console.log(getCombinations("abcde"));
+
+const getCombinations = (str) => {
+    
+    const results = [];
+    
+    console.log*(str.length);
+    
+    if(str.length === 1) {
+        results.push(str);
+        return results;
+    }
+    
+    for(let i=0; i < str.length; i++) {
+        const fChar = str[i];
+        const charsL = str.substring(0,i) + str.substring(i+1);
+        const inrCombinations = getCombinations(charsL);
+        
+        for(let j=0; j < inrCombinations.length; j++) {
+                results.push(fChar+ inrCombinations[j]);
+        }
+    }
+    
+    return results
+}
+
+console.log(getCombinations("abcde"));

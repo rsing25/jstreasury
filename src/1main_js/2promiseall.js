@@ -1,3 +1,6 @@
+Promise.resolve(x=1).then((val)=>{console.log(val)});
+// 1
+
 const promise1 = Promise.resolve('Hellow World');
 const promise2 = 10;
 const promise3 = new Promise( (resolve,reject) => {

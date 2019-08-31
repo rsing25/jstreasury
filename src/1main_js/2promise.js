@@ -1,5 +1,8 @@
 "use strict"
 
+Promise.resolve(x=1).then((val)=>{console.log(val)});
+// 1
+
 const posts = [
     {title:'post one', body:'This is post one'},
     {title:'post two', body:'This is post two'}
