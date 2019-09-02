@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+/** CSS settings are applied to any HTML element with the class .symbol that is inside an element with the class .element**/
+.element .symbol {
+	color:red
+}
+
+/**CSS settings are applied to any HTML element with the class .symbol that is inside an element with the 2 classes .element and .large**/
+.element.large .symbol {
+	color:blue
+}
+
+</style>
+</head>
+<body>
+
+<div class="element">
+    <i class="symbol">test</i>
+</div>
+
+<div class="element large">
+    <i class="symbol">test123</i>
+</div>
+
+</body>
+</html>

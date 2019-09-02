@@ -22,7 +22,7 @@ const getCombinations = (str) => {
     
     const results = [];
     
-    console.log*(str.length);
+    console.log(str.length);
     
     if(str.length === 1) {
         results.push(str);
