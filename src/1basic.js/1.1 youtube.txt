@@ -1,0 +1,32 @@
+https://www.youtube.com/watch?v=_js7yhvPdWA
+Steven Dux	Mid-day Pattern Strategy/Detailed Risk Management
+
+
+https://www.youtube.com/watch?v=zglD_0aOD4w
+Loss की Problem हो जाएगी ख़तम - 3 EMA hacks every trader must know
+
+
+
+css position. https://www.youtube.com/watch?v=-vo0HzNHL3U 
+		techsith css position( fixed, absolute, relative, static )
+
+
+CSS display  https://www.youtube.com/watch?v=xcTEDlgkD7o&t=313s
+				CSS Display Property Tutorial
+
+
+
+https://www.youtube.com/watch?v=1haoknb4m6k
+Advanced CSS Tutorial - Tricky CSS Properties
+
+
+
+
+css font relative tutorial 
+em cascade
+rem realtive to root
+
+
+css viewport  vmin (smaller of two)
+src/karat/tetst.css
+

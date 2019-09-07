@@ -17,3 +17,8 @@ var add1 = function(a) {
 }
 
 console.error(add1.bind(this,1,2)());
+
+
+var curry = function(fn) {
+    
+}
