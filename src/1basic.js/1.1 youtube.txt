@@ -1,6 +1,9 @@
 https://www.youtube.com/watch?v=_js7yhvPdWA
 Steven Dux	Mid-day Pattern Strategy/Detailed Risk Management
 
+	step1 48 EMA green close, 48 EMA green low
+	step2 once first candle complete breakout either side. wait for confi		
+
 
 https://www.youtube.com/watch?v=zglD_0aOD4w
 Loss की Problem हो जाएगी ख़तम - 3 EMA hacks every trader must know
@@ -29,4 +32,40 @@ rem realtive to root
 
 css viewport  vmin (smaller of two)
 src/karat/tetst.css
+
+
+https://leetcode.com/problemset/top-interview-questions/
+https://coderbyte.com/algorithm/
+https://rohan-paul.github.io/javascript/2018/04/29/2-sum/
+
+------------------------------------------------------------------------
+
+https://www.youtube.com/watch?v=A-lc9W6iY_0
+आथिॅक समस्या को दूर करने का ऐतिहासिक प्रयोग ।
+
+
+https://www.youtube.com/watch?v=mrn9dWcSHtY
+फटाफट धनलाभ कराने वाला ऐतिहासिक प्रयोग ।
+
+https://www.youtube.com/watch?v=SxT4nL_v1Xo
+गरीबी और कजॅ से छुटकारा पाने का ऐतिहासिक प्रयोग
+
+https://www.youtube.com/watch?v=s5MBWv2ID84
+Complete Your Dreams.
+
+https://www.youtube.com/watch?v=G-5SzYvvz8U
+मंगल, राहु और शनि की पीड़ा खत्म करने का ऐतिहासिक प्रयोग
+
+https://www.youtube.com/watch?v=fmydDsrLU04
+बिगड़े काम बनाने वाला ऐतिहासिक प्रयोग ।
+
+https://www.youtube.com/watch?v=JIfxfKbKpxA
+Confusion में सही निणॅय करने का सबसे आसान उपाय ।
+
+
+https://www.youtube.com/watch?v=r0x-xb0EM0U
+अच्छा और बुरा वक्त आने से पहले देते हैं यह संकेत ।
+
+
+
 
